@@ -1,0 +1,3 @@
+on respawn:
+    if player has permission "group.ci":
+        make console execute command "/lp user %player% group set default"
