@@ -1,0 +1,15 @@
+on death of player:
+	if attacker is a player:
+		if projectile is set:
+			set the death message to "☠&c%victim% &7died to &c%attacker%"
+	
+	if attacker is not a player:
+		if attacker is set:
+			set the death message to "&c☠ %victim% &eslays &c%attacker%"
+	
+	if damage was caused by potion:
+		set the death message to "&c☠ %victim% &edied."
+		
+	if attacker is a player:
+		if attacker is set:
+			set the death message to "&c☠ %victim% &edied by &c%attacker%"
