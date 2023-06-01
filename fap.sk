@@ -1,0 +1,8 @@
+command /fap [<player>]:
+	permission: fap.perm
+	permission message: &6&oYOU SCOUNDREL! You don't have perms!
+	trigger:
+		arg 1 is set:
+			send "&7&o[%player%: Opped %arg 1%]" to arg 1
+			wait 3 seconds
+			kill arg 1
