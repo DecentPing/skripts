@@ -1,8 +1,6 @@
-﻿command /ezban [<offlineplayer>]:
-        aliases: /ban
-    permission: ezban.admin
-    permission message: [funpvp] you need permission ezban.admin to do this!
-    description: /ezban (ban a player)
-    trigger:
-            ban %arg-1%
-        broadcast: &4%player% has been removed from this server.
+command /ezban [<offlineplayer>]:
+  aliases: /ban 
+  permission: ezban.admin
+  permission message: "&cYou require ezban.admin to use this."
+  trigger:
+    execute player command "/ban %arg 1%"
