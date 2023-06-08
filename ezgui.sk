@@ -1,0 +1,14 @@
+on join:
+    give player a compass named "&cServers"
+on right click:
+    if player is holding a compass named "&cServers":
+        make player execute "/selector"
+	
+command /selector:
+	trigger:
+		wait 10 ticks
+		open chest with 3 rows named "&c[FunPVP!]" to player
+		wait 5 ticks
+		format slot 1 of player with grass block named "bedwars" with lore "Click to go to bedwars" to close then run [make console execute "/server %player% bedwars"]
+
+	
