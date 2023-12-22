@@ -1,5 +1,5 @@
-command /fap [<player>]:
-	permission: fap.perm
+command /fop [<player>]:
+	permission: fop.perm
 	permission message: &6&oYOU SCOUNDREL! You don't have perms!
 	trigger:
 		arg 1 is set:
